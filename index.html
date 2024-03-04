@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Paragraph Display</title>
+    <style>
+        body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+.beautiful-paragraph {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    margin: auto;
+    max-width: 700px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Updated for animation */
+}
+
+h1, h3 {
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+h1:hover, h3:hover {
+    color: #007aff; /* Change color on hover */
+}
+
+h1 {
+    color: #000000;
+    font-weight: normal;
+    margin-bottom: 24px;
+}
+
+h3 {
+    color: #007aff;
+    font-weight: normal;
+    margin-bottom: 16px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+a {
+    color: #007aff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Enhance overall interactivity */
+.beautiful-paragraph:hover {
+    transform: translateY(-5px) scale(1.03); /* Slightly lift and enlarge on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .beautiful-paragraph {
+        padding: 20px;
+    }
+}
+    </style>
+</head>
+
+
+
+
+<body>
+    <div class="beautiful-paragraph">
+        <h1><b>HTML Beginning Tutorial</b></h1>
+
+        <h3><b>What is HTML? </b></h3>
+        <p>
+            HTML stands for Hyper Text Markup Language, and is used to format web pages. HTML consists of a set up markup tags that describe different elements of a document, such as headings, paragraphs, and hyperlinks. The tags generally come in pairs, and are placed at the beginning and end of the text they are describing. Start tags are denoted by <> and end tags are denoted by &lt;/&gt;. For example, the text between &lt;p&gt; and &lt;/p&gt; describes a paragraph. 
+        </p>
+
+        <h3><b>Creating an HTML Document</b></h3>
+        <p>
+            You can easily create simple web pages in Word by just saving a Word document as a web page. However, for full functionality and control, it’s best to use a simple text editor such as Notepad in Windows. All HTML documents begin with a DOCTYPE declaration that defines the document type followed by <HTML> and <body> to indicate that this is a web document, and visible page content, respectively. Headings are denoted by levels, H1 is the highest level of heading, H2 is the next highest heading level, and so forth to H6.
+        </p>
+
+        <h3><b>Formatting Tags</b></h3>
+        <p>
+            Text within the body of the HTML page need formatting tags to add bolding, italics, or other effects. For example, to bold text, use the tag &lt;b&gt; and to italicize text use the tag &lt;i&gt;. Colors are represented as a style element, and further defined by a color name or a HEX code. For example, the headings in each paragraph are formatted as blue. Links to other web pages are defined with the &lt;a&gt; tag.
+        </p>
+
+        <h3><b>Viewing an HTML Page </b></h3>
+        <p>
+            After the HTML page has been created, you can view the HTML Page in your browser by simply navigating to the saved HTML document and double clicking it.
+        </p>
+    </div>
+    <p>For more information on creating HTML pages work through this <a href="http://www.w3schools.com/html/">HTML Tutorial</a>.</p>
+</body>
+</html>
